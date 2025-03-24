@@ -1,0 +1,21 @@
+# Entorno virtual
+venv/
+__pycache__/
+*.pyc
+
+# Archivos de base de datos
+*.db
+
+# Archivos de migraciones cacheados
+migrations/
+
+# Archivos del sistema
+.DS_Store
+*.log
+
+# VSCode
+.vscode/
+
+# Archivos generados por Flask
+instance/
+.env
