@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
 from flasgger import Swagger 
-
+from swagger_utils.template import template
 db = SQLAlchemy()
 ma = Marshmallow()
 
@@ -22,6 +22,6 @@ def create_app():
     app.register_blueprint(producto_bp)
 
     # Inicializar Swagger
-    swagger = Swagger(app)
+    swagger = Swagger(app, template=template)
 
     return app

@@ -1,4 +1,3 @@
-# app/routes/producto.py
 from flask import Blueprint, request, jsonify
 from app import db
 from app.models.producto import Producto
