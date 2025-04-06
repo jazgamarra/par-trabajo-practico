@@ -1,4 +1,3 @@
-# app/schemas/producto.py
 from app import ma
 from app.models.producto import Producto
 
