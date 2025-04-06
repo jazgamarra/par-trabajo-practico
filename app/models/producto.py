@@ -8,6 +8,6 @@ class Producto(db.Model):
     precio = db.Column(db.Float, nullable=False)
     descripcion = db.Column(db.String(200), nullable=True)
 
-    # represenacion en texto del objeto generado 
+    # representacion en texto del objeto generado 
     def __repr__(self):
         return f"<Producto {self.nombre}>"
