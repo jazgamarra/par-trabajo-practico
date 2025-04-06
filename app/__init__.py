@@ -22,7 +22,6 @@ def create_app():
     app.register_blueprint(producto_bp)
 
     # Inicializar Swagger
-    from swagger_utils.template import template
-    swagger = Swagger(app, template=template)
+    swagger = Swagger(app)
 
     return app
