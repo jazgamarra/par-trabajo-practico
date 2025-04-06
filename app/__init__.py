@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
 from flasgger import Swagger 
-from swagger_utils.template import template
+from utils.swagger_template import template
 db = SQLAlchemy()
 ma = Marshmallow()
 
