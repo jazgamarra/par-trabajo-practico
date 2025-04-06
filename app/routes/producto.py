@@ -5,8 +5,8 @@ from app.schemas.producto import ProductoSchema
 from utils.auth import require_api_key
 
 producto_bp = Blueprint('producto_bp', __name__)
-producto_schema = ProductoSchema()
-productos_schema = ProductoSchema(many=True)
+producto_schema = ProductoSchema() # para un solo producto
+productos_schema = ProductoSchema(many=True) # para un LISTA DE productos
 
 @producto_bp.route('/productos', methods=['GET'])
 @require_api_key

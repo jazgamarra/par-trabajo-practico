@@ -17,9 +17,12 @@ def create_app():
     ma.init_app(app)
     Migrate(app, db)
 
-    # Registrar Blueprints
+    # Registrar Rutas 
     from app.routes.producto import producto_bp
+    from app.routes.proveedor import proveedor_bp
+    
     app.register_blueprint(producto_bp)
+    app.register_blueprint(proveedor_bp)
 
     # Inicializar Swagger
     swagger = Swagger(app, template=template)

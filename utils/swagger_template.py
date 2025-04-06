@@ -12,7 +12,7 @@ template = {
             "in": "header",
             "name": "Authorization"
             }
-        }
+        },
     },
     "security": [
         {

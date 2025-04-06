@@ -1,13 +1,12 @@
 from app import db
 
-class Producto(db.Model):
-    __tablename__ = 'productos'
+class Proveedor(db.Model):
+    __tablename__ = 'proveedor'
     
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nombre = db.Column(db.String(100), nullable=False)
-    precio = db.Column(db.Float, nullable=False)
-    descripcion = db.Column(db.String(200), nullable=True)
-
+    contacto = db.Column(db.String(20), nullable=False)
+    
     # representacion en texto del objeto generado 
     def __repr__(self):
-        return f"<Producto {self.nombre}>"
+        return f"<Proveedor {self.nombre}>"
