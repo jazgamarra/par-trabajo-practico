@@ -1,5 +1,4 @@
-# API REST 
-Trabajos practicos de la asignatura Prog. de Aplicaciones en redes 
+# Trabajo practico 1 de la asignatura Prog. de Aplicaciones en redes - API REST 
 
 ## Para ejecutar el proyecto 
 **Crear y activar un entorno virtual**
@@ -15,5 +14,5 @@ Los requerimientos se instalan una vez activado el entorno virtual, con el coman
 ## Acceder a la documentacion 
 Ejecutar el proyecto para correr el servidor e ingresar a la url `http://localhost:5000/apidocs`
 
-## URL base para zzzpruebas 
+## URL base para pruebas 
 `http://localhost:5000`
