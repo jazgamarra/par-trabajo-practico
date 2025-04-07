@@ -21,10 +21,12 @@ def create_app():
     from app.routes.producto import producto_bp
     from app.routes.proveedor import proveedor_bp
     from app.routes.cliente import cliente_bp
+    from app.routes.factura import factura_bp
     
     app.register_blueprint(producto_bp)
     app.register_blueprint(proveedor_bp)
     app.register_blueprint(cliente_bp)
+    app.register_blueprint(factura_bp)
 
     # Inicializar Swagger
     swagger = Swagger(app, template=template)
