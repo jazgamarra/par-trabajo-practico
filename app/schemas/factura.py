@@ -6,3 +6,4 @@ class FacturaSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model =  Factura # definimos que este esquema es para factura
         load_instance = True # permite convertir json a objetos de la clase factura
+        include_fk = True # incluir claves foraneas en el esquema

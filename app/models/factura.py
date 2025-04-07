@@ -9,8 +9,3 @@ class Factura(db.Model):
     numero = Column(Integer, nullable=False)
     total = Column(Integer, nullable=False)
     cliente = relationship('Cliente', backref='facturas')
-
-    
-
-
-    # representacion en texto del objeto generado
