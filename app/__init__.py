@@ -4,7 +4,7 @@ from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
 from flasgger import Swagger 
 from utils.swagger_template import template
-from models import * 
+
 
 db = SQLAlchemy()
 ma = Marshmallow()
@@ -25,6 +25,8 @@ def create_app():
     from app.routes.cliente import cliente_bp
     from app.routes.factura import factura_bp
     from app.routes.reporte import reporte_bp
+    from app.models.factura_producto import FacturaProducto
+    from app.models.proveedor_producto import ProveedorProducto
     
     app.register_blueprint(producto_bp)
     app.register_blueprint(proveedor_bp)

@@ -8,6 +8,9 @@ class Producto(db.Model):
     precio = db.Column(db.Float, nullable=False)
     descripcion = db.Column(db.String(200), nullable=True)
 
+    proveedor_productos = db.relationship('ProveedorProducto', back_populates='producto', cascade='all, delete-orphan')
+    factura_productos = db.relationship('FacturaProducto', back_populates='producto', cascade='all, delete-orphan')
+
     # representacion en texto del objeto generado 
     def __repr__(self):
         return f"<Producto {self.nombre}>"
