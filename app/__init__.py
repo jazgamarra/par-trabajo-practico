@@ -4,6 +4,8 @@ from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
 from flasgger import Swagger 
 from utils.swagger_template import template
+from models import * 
+
 db = SQLAlchemy()
 ma = Marshmallow()
 

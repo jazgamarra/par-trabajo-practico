@@ -15,12 +15,5 @@ Los requerimientos se instalan una vez activado el entorno virtual, con el coman
 ## Acceder a la documentacion 
 Ejecutar el proyecto para correr el servidor e ingresar a la url `http://localhost:5000/apidocs`
 
-## Para hacer pruebas 
-curl http://127.0.0.1:5000/productos/1
-curl -X POST http://127.0.0.1:5000/productos -H "Content-Type: application/json" -d "{\"nombre\": \"Teclado mecánico\", \"precio\": 150, \"descripcion\": \"RGB\"}"
-
-## Comandos relacionados a la bd 
-flask db init     → Prepara el sistema de migraciones.
-flask db migrate  → Detecta cambios en modelos y los convierte a instrucciones.
-flask db upgrade  → Aplica esas instrucciones a la base de datos real.
-
+## URL base para pruebas 
+`http://localhost:5000`
