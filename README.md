@@ -1,5 +1,4 @@
-# API REST 
-Trabajos practicos de la asignatura Prog. de Aplicaciones en redes 
+# Trabajo practico 1 de la asignatura Prog. de Aplicaciones en redes - API REST 
 
 ## Para ejecutar el proyecto 
 **Crear y activar un entorno virtual**
