@@ -15,5 +15,5 @@ Los requerimientos se instalan una vez activado el entorno virtual, con el coman
 ## Acceder a la documentacion 
 Ejecutar el proyecto para correr el servidor e ingresar a la url `http://localhost:5000/apidocs`
 
-## URL base para zzzpruebas 
+## URL base para pruebas 
 `http://localhost:5000`
